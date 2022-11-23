@@ -1,7 +1,3 @@
-html {
-    font-family: 'Roboto', sans-serif;
-}
-
 header.header {
     width: 100%;
     height: 161px;
@@ -30,21 +26,7 @@ p.subtitle {
     color: rgba(0, 0, 0, 0.54);
 }
 
-button.create-button {
-    width: 158px;
-    height: 42px;
-    background: #2196F3;
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 15px;
-    letter-spacing: 0.3px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    outline: none;
-    border: none;
-}
-
-button.create-button > a {
+button#index-create > a {
     color: inherit;
     width: 100%;
     height: 100%;
@@ -53,16 +35,8 @@ button.create-button > a {
     justify-content: center;
 }
 
-button.create-button:hover {
-    background: #0B79D0;
-}
 
-button.create-button:disabled {
-    background: rgba(0, 0, 0, 0.12);
-    color: rgba(0, 0, 0, 0.26);
-}
-
-button.create-button:disabled > a {
+button#index-create:disabled > a {
     pointer-events: none;
     cursor: default;
 }
@@ -269,6 +243,7 @@ button.item__menu-button {
     outline: none;
     background: none;
     cursor: pointer;
+    z-index: 0;
 }
 
 button.item__share-button:hover,
@@ -301,6 +276,7 @@ button.item__menu-button:focus {
     font-size: 14px;
     letter-spacing: 0.15px;
     color: rgba(0, 0, 0, 0.87);
+    z-index: 1;
 }
 
 .item__menu-block>p {

@@ -5,11 +5,12 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
     <title>Cute Onion</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
         <h1 class="title">Социальные сети</h1>
         <p class="subtitle">Делитесь постами из соцсетей</p>
     </div>
-    <button class="create-button">
+    <button class="create-button" id="index-create">
         <a href="create.html">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
                  class="create-button__image">
@@ -93,7 +94,24 @@
                         <span class="item__text item__published-account item__published-account_yellow">altenar</span>
                         <span class="item__subtext">25/02/2022</span>
                     </td>
-                    <td class="item__links">3</td>
+                    <td class="item__links"><button class="item__share-button">
+                        <svg width="20" height="10" viewBox="0 0 20 10" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.9 5C1.9 3.29 3.29 1.9 5 1.9H9V0H5C2.24 0 0 2.24 0 5C0 7.76 2.24 10 5 10H9V8.1H5C3.29 8.1 1.9 6.71 1.9 5ZM6 6H14V4H6V6ZM15 0H11V1.9H15C16.71 1.9 18.1 3.29 18.1 5C18.1 6.71 16.71 8.1 15 8.1H11V10H15C17.76 10 20 7.76 20 5C20 2.24 17.76 0 15 0Z"
+                                  fill="currentColor"/>
+                        </svg>
+                    </button>
+                        <button class="item__menu-button">
+                            <svg width="4" height="16" viewBox="0 0 4 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z"
+                                      fill="currentColor"/>
+                            </svg>
+                        </button>
+                        <div class="item__menu-block">
+                            <p>Опубликовать</p>
+                            <p>Удалить</p>
+                        </div></td>
                 </tr>
                 <tr class="item">
                     <td class="item__post">
@@ -107,7 +125,24 @@
                         <span class="item__text item__published-account item__published-account_red">altenar</span>
                         <span class="item__subtext">25/02/2022</span>
                     </td>
-                    <td class="item__links">3</td>
+                    <td class="item__links"><button class="item__share-button">
+                        <svg width="20" height="10" viewBox="0 0 20 10" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.9 5C1.9 3.29 3.29 1.9 5 1.9H9V0H5C2.24 0 0 2.24 0 5C0 7.76 2.24 10 5 10H9V8.1H5C3.29 8.1 1.9 6.71 1.9 5ZM6 6H14V4H6V6ZM15 0H11V1.9H15C16.71 1.9 18.1 3.29 18.1 5C18.1 6.71 16.71 8.1 15 8.1H11V10H15C17.76 10 20 7.76 20 5C20 2.24 17.76 0 15 0Z"
+                                  fill="currentColor"/>
+                        </svg>
+                    </button>
+                        <button class="item__menu-button">
+                            <svg width="4" height="16" viewBox="0 0 4 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z"
+                                      fill="currentColor"/>
+                            </svg>
+                        </button>
+                        <div class="item__menu-block">
+                            <p>Опубликовать</p>
+                            <p>Удалить</p>
+                        </div></td>
                 </tr>
                 </tbody>
             </table>
