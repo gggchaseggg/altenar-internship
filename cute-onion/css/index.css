@@ -1,3 +1,5 @@
+@import "variables.css";
+
 header.header {
     width: 100%;
     height: 161px;
@@ -23,7 +25,7 @@ p.subtitle {
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.15px;
-    color: rgba(0, 0, 0, 0.54);
+    color: var(--color-gray1);
 }
 
 button#index-create > a {
@@ -64,7 +66,7 @@ label.posts-table__radio-label {
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.4px;
-    color: rgba(0, 0, 0, 0.54);
+    color: var(--color-gray1);
     border-bottom: 2px solid transparent;
     transition: border-bottom-color 0.3s linear, color 0.3s ease;
 }
@@ -76,8 +78,8 @@ input.posts-table__radio {
 
 input#first-social:checked ~ label#first-social-label,
 input#second-social:checked ~ label#second-social-label {
-    color: #2196F3;
-    border-bottom: 2px solid #2196F3;
+    color: var(--color-blue1);
+    border-bottom: 2px solid var(--color-blue1);
     transition: border-bottom-color 0.3s linear, color 0.3s ease;
 }
 
@@ -141,7 +143,7 @@ img.item__image {
 .item__subtext {
     font-size: 12px;
     letter-spacing: 0.4px;
-    color: rgba(0, 0, 0, 0.38);
+    color: var(--color-gray2);
 }
 
 .item__post {
@@ -210,7 +212,6 @@ img.item__image {
     left: -61px;
 }
 
-
 .item__published-account:hover::after {
     display: block;
     position: absolute;
@@ -248,18 +249,18 @@ button.item__menu-button {
 
 button.item__share-button:hover,
 button.item__menu-button:hover {
-    color: #2196F3;
+    color: var(--color-blue1);
     background: rgba(33, 150, 243, 0.04);
 }
 
 button.item__share-button:disabled,
 button.item__menu-button:disabled {
     pointer-events: none;
-    color: #E0E0E0;
+    color: var(--color-gray3);
 }
 
 button.item__menu-button:focus {
-    color: #2196F3;
+    color: var(--color-blue1);
     background: rgba(33, 150, 243, 0.24);
 }
 
@@ -275,7 +276,7 @@ button.item__menu-button:focus {
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.15px;
-    color: rgba(0, 0, 0, 0.87);
+    color: var(--color-black1);
     z-index: 1;
 }
 

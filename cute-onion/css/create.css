@@ -1,3 +1,5 @@
+@import "variables.css";
+
 body#create-body {
     height: 100%;
 }
@@ -25,11 +27,11 @@ header#create-header > p {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.15px;
-    color: rgba(0, 0, 0, 0.54);
+    color: var(--color-gray1);
 }
 
 header#create-header > p > a {
-    color: #2196F3;
+    color: var(--color-blue1);
 }
 
 main#create-main {
@@ -40,7 +42,7 @@ a.link-back {
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.15px;
-    color: rgba(0, 0, 0, 0.54);
+    color: var(--color-gray1);
 }
 
 a.link-back > svg {
@@ -78,7 +80,7 @@ form#form {
 fieldset.form__fieldset {
     margin-top: 32px;
     border: none;
-    border-bottom: 1px solid #E0E0E0;
+    border-bottom: 1px solid var(--color-gray3);
     padding: 0 0 33px;
 }
 
@@ -100,13 +102,13 @@ fieldset.form__fieldset > p {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.15px;
-    color: rgba(0, 0, 0, 0.54);
+    color: var(--color-gray1);
 }
 
 .form__text-input {
     width: 100%;
     height: 56px;
-    border: 1px solid #E0E0E0;
+    border: 1px solid var(--color-gray3);
     border-radius: 4px;
     font-weight: 400;
     font-size: 16px;
@@ -118,11 +120,11 @@ fieldset.form__fieldset > p {
 }
 
 .form__text-input:focus {
-    border: 2px solid #2196F3;
+    border: 2px solid var(--color-blue1);
 }
 
 .form__text-input::placeholder {
-    color: rgba(0, 0, 0, 0.54);
+    color: var(--color-gray1);
 }
 
 .form__input-wrapper {
@@ -161,7 +163,7 @@ fieldset.form__fieldset > p {
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.15px;
-    color: rgba(0, 0, 0, 0.54);
+    color: var(--color-gray1);
 }
 
 .form__input-wrapper30::after {
@@ -218,7 +220,7 @@ textarea#description {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.15px;
-    color: rgba(0, 0, 0, 0.87);
+    color: var(--color-black1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,7 +247,7 @@ input#cover-file {
 }
 
 #file-input__text > span > span {
-    color: #2196F3;
+    color: var(--color-blue1);
 }
 
 #file-input__text > span + span {
@@ -253,7 +255,7 @@ input#cover-file {
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.4px;
-    color: rgba(0, 0, 0, 0.54);
+    color: var(--color-gray1);
 }
 
 input#color {
@@ -287,7 +289,7 @@ fieldset#form__theme>label {
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.4px;
-    color: rgba(0, 0, 0, 0.87);
+    color: var(--color-black1);
 }
 
 input#theme {
@@ -301,7 +303,7 @@ input#theme {
     width: 50px;
     height: 23px;
     border-radius: 30px;
-    background: rgba(0, 0, 0, 0.87);;
+    background: var(--color-black1);
     transition: 0.3s;
 
 }
@@ -321,7 +323,7 @@ input#theme {
 }
 
 input#theme:checked~#form__theme-switcher {
-    background: #E0E0E0;
+    background: var(--color-gray3);
 }
 
 input#theme:checked~#form__theme-switcher::before {
@@ -329,14 +331,14 @@ input#theme:checked~#form__theme-switcher::before {
 }
 
 span#light {
-    color: rgba(0, 0, 0, 0.38);
+    color: var(--color-gray2);
 }
 
 input#theme:checked~span#light {
-    color: rgba(0, 0, 0, 0.87);
+    color: var(--color-black1);
 }
 input#theme:checked~span#dark {
-    color: rgba(0, 0, 0, 0.38);
+    color: var(--color-gray2);
 }
 
 input#link {
@@ -363,7 +365,7 @@ p#form__post-create-info {
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.4px;
-     color: rgba(0, 0, 0, 0.54);
+    color: var(--color-gray1);
     text-align: center;
 }
 
