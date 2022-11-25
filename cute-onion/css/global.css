@@ -1,0 +1,27 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+button.create-button {
+    width: 158px;
+    height: 42px;
+    background: #2196F3;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+}
+
+button.create-button:hover {
+    background: #0B79D0;
+}
+
+button.create-button:disabled {
+    background: rgba(0, 0, 0, 0.12);
+    color: rgba(0, 0, 0, 0.26);
+}
